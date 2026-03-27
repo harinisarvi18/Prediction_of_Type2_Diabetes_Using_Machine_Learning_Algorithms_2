@@ -1,0 +1,1 @@
+# Prediction_of_Type2_Diabetes_Using_Machine_Learning_Algorithms_2
