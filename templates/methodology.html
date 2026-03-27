@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Methodology</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f9fbff, #eef7f8);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+        }
+        footer {
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+        }
+    </style>
+</head>
+
+<body>
+    
+<nav class="navbar navbar-dark shadow">
+    <div class="container-fluid">
+        <span class="navbar-brand h4">System Methodology</span>
+    </div>
+</nav>
+
+<div class="container mt-4 mb-5">
+
+    <h4 class="text-primary">1. Dataset Description</h4>
+    <p class="text-muted">
+        The system is trained using a structured diabetes dataset containing
+        patient demographic details, vital signs, clinical indicators,
+        and family medical history.
+    </p>
+
+    <h4 class="text-primary mt-3">2. Data Preprocessing</h4>
+    <ul>
+        <li>Handling missing and inconsistent values</li>
+        <li>Feature normalization and scaling</li>
+        <li>Encoding categorical variables</li>
+    </ul>
+
+    <h4 class="text-primary mt-3">3. Feature Selection</h4>
+    <p class="text-muted">
+        Key features such as age, glucose level, BMI, blood pressure,
+        and hereditary factors were selected based on medical relevance.
+    </p>
+
+    <h4 class="text-primary mt-3">4. Machine Learning Model</h4>
+    <p class="text-muted">
+        A supervised classification model is used to predict diabetes risk.
+        The model is trained, validated, and tested to ensure robustness
+        and generalization.
+    </p>
+
+    <h4 class="text-primary mt-3">5. Prediction & Output</h4>
+    <p class="text-muted">
+        The trained model predicts diabetes risk probability, which is
+        displayed to the user along with health insights.
+    </p>
+
+    <h4 class="text-primary mt-3">6. System Architecture</h4>
+    <ul>
+        <li>Frontend: HTML, Bootstrap, JavaScript</li>
+        <li>Backend: Python Flask</li>
+        <li>Model: Scikit-learn</li>
+    </ul>
+
+</div>
+
+<footer class="text-white text-center py-2 fixed-bottom">
+    <small>© 2025 Diabetes Prediction System</small>
+</footer>
+
+</body>
+</html>

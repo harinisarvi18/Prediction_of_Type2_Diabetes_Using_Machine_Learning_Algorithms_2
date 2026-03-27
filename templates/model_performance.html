@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Performance</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #f0f4ff, #e0f7fa);
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+        }
+        .metric-card {
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background: linear-gradient(90deg, #0072ff, #00c6ff);
+        }
+    </style>
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-dark shadow">
+    <div class="container-fluid">
+        <span class="navbar-brand h4">Model Performance Analysis</span>
+    </div>
+</nav>
+
+<div class="container mt-4 mb-5">
+
+    <h4 class="text-primary mb-4">Evaluation Metrics</h4>
+
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="card metric-card p-3 shadow">
+                <h5>Accuracy</h5>
+                <h3 class="text-success">92%</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card metric-card p-3 shadow">
+                <h5>Precision</h5>
+                <h3 class="text-info">90%</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card metric-card p-3 shadow">
+                <h5>Recall</h5>
+                <h3 class="text-warning">88%</h3>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card metric-card p-3 shadow">
+                <h5>F1-Score</h5>
+                <h3 class="text-primary">89%</h3>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-4">
+
+    <h4 class="text-primary mb-3">Confusion Matrix</h4>
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='images/confusion_matrix.png') }}"
+             class="img-fluid shadow rounded"
+             alt="Confusion Matrix">
+    </div>
+
+    <hr class="my-4">
+
+    <h4 class="text-primary">Interpretation</h4>
+    <p class="text-muted">
+        The model demonstrates strong predictive performance with high accuracy and balanced
+        precision-recall values. This indicates the system can reliably identify individuals
+        at risk of Type-2 Diabetes while minimizing false predictions.
+    </p>
+
+</div>
+
+<footer class="text-white text-center py-2 fixed-bottom">
+    <small>© 2025 Diabetes Prediction System</small>
+</footer>
+
+</body>
+</html>

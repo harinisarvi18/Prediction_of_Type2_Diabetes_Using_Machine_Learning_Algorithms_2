@@ -1,0 +1,38 @@
+# Virtual environment
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+
+# CatBoost training logs
+catboost_info/
+
+# Generated outputs
+outputs/*.pdf
+outputs/*.csv
+outputs/*.pkl
+# Environment variables
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large datasets (optional but recommended)
+data/
+datasets/
+
+# Logs
+*.log
+
+# Model files (if stored outside outputs folder)
+*.pkl
+*.joblib
+*.csv
