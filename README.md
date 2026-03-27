@@ -1,5 +1,5 @@
 # Prediction_of_Type2_Diabetes_Using_Machine_Learning_Algorithms_2
-# 🩺 Type-2 Diabetes Prediction Using Machine Learning Algorithms
+
 
 ## 📌 Project Overview
 
